@@ -22,7 +22,7 @@
                         <!-- Single Widget -->
                         <div class="single-footer f-link">
                             <h3>สนับสนุนโดย</h3>
-                           <img src="https://www2.tistr.or.th/tistrservices/training/images/logo2.png" class="logo"><h3>สถาบันวิจัยวิทยาศาสตร์และเทคโนโลยีแห่งประเทศไทย</h3>
+                           <img src="https://www2.tistr.or.th/tistrservices/training/images/logo2.png" class="logo-f"><h3>สถาบันวิจัยวิทยาศาสตร์และเทคโนโลยีแห่งประเทศไทย</h3>
                         </div>
                         <!-- End Single Widget -->
                     

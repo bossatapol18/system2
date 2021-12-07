@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
-<?php include('./include/head.php');?>
-<?php include('./css/css.php');?>
-<?php include('./connection/connection.php');?>
+<?php include('./include/head.php'); ?>
+<?php include('./css/css.php'); ?>
+<?php include('./connection/connection.php'); ?>
 
 <body class="font">
     <div class="preloader">
@@ -16,7 +16,7 @@
     </div>
     <!-- /End Preloader -->
 
-<?php include('./include/menu.php');?>
+    <?php include('./include/menu.php'); ?>
 
     <!-- Start Hero Area -->
     <section class="hero-area overlay">
@@ -39,8 +39,8 @@
                                         <input type="text" name="keyword" id="keyword" placeholder="Product keyword">
                                     </div>
                                 </div>
-                                
-                               
+
+
                                 <div class="col-lg-2 col-md-2 col-12 p-0">
                                     <div class="search-btn button">
                                         <button class="btn"><i class="lni lni-search-alt"></i> Search</button>
@@ -60,7 +60,7 @@
     <section class="categories">
         <div class="container">
             <div class="cat-inner">
-                <div class="row mg-l-menu2">
+                <div class="row ">
                     <div class="col-12 p-0">
                         <div class="category-slider">
                             <!-- Start Single Category -->
@@ -70,41 +70,47 @@
                                 </div>
                                 <h3>หน้าแรก</h3>
 
-                            <a href="?page=index" class="single-cat">
-                                <div class="icon">
-                                    <img src="https://studyinter.com/wp-content/uploads/2019/08/3-icon-%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3.png" alt="#">
-                                </div>
-                                <h3>เอกสารทั้งหมด</h3>
-                                
+                                <a href="?page=index" class="single-cat">
+                                    <div class="icon">
+                                        <img src="https://studyinter.com/wp-content/uploads/2019/08/3-icon-%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3.png" alt="#">
+                                    </div>
+                                    <h3>เอกสารทั้งหมด</h3>
 
-                            <a href="?page=insert" class="single-cat">
-                                <div class="icon">
-                                    <img src="https://th.seaicons.com/wp-content/uploads/2015/11/document-add-icon.png" alt="#">
-                                </div>
-                                <h3>เพิ่มเอกสาร</h3>
-                                
-                            </a>
-                            <!-- End Single Category -->
-                            <!-- Start Single Category -->
-                            <a href="?page=status" class="single-cat">
-                                <div class="icon">
-                                    <img src="https://cdn.icon-icons.com/icons2/2011/PNG/512/edit_document_file_icon_123491.png" alt="#">
-                                </div>
-                                <h3>แก้ไขสถานะ</h3>
-                                
-                            </a>
-                            <!-- End Single Category -->
-                            <!-- Start Single Category -->
-                            <a href="?page=report" class="single-cat">
-                                <div class="icon">
-                                    <img src="https://cdn.iconscout.com/icon/free/png-256/report-file-2014973-1700581.png" alt="#">
-                                </div>
-                                <h3>รายงานเอกสาร</h3>
-                                
-                            </a>
-                            <!-- End Single Category -->
-                            
-                            <!-- End Single Category -->
+
+                                    <a href="?page=insert" class="single-cat">
+                                        <div class="icon">
+                                            <img src="https://th.seaicons.com/wp-content/uploads/2015/11/document-add-icon.png" alt="#">
+                                        </div>
+                                        <h3>เพิ่มเอกสาร</h3>
+
+                                    </a>
+                                    <!-- End Single Category -->
+                                    <!-- Start Single Category -->
+                                    <a href="?page=status" class="single-cat">
+                                        <div class="icon">
+                                            <img src="https://cdn.icon-icons.com/icons2/2011/PNG/512/edit_document_file_icon_123491.png" alt="#">
+                                        </div>
+                                        <h3>แก้ไขสถานะ</h3>
+
+                                    </a>
+                                    <!-- End Single Category -->
+                                    <!-- Start Single Category -->
+                                    <a href="?page=report" class="single-cat">
+                                        <div class="icon">
+                                            <img src="https://cdn.iconscout.com/icon/free/png-256/report-file-2014973-1700581.png" alt="#">
+                                        </div>
+                                        <h3>รายงานเอกสาร</h3>
+
+                                    </a>
+                                    <!-- End Single Category -->
+                                    <a href="?page=add" class="single-cat">
+                                        <div class="icon">
+                                            <img src="https://image.flaticon.com/icons/png/512/1159/1159711.png" alt="#">
+                                        </div>
+                                        <h3>เพิ่มข้อมูลพื้นฐาน</h3>
+
+                                    </a>
+                                    <!-- End Single Category -->
                         </div>
                     </div>
                 </div>
@@ -113,31 +119,35 @@
     </section>
     <!-- /End Categories Area -->
 
-    <?php 
-      if (!isset($_GET['page']) && empty($_GET['page'])) {
+    <?php
+    if (!isset($_GET['page']) && empty($_GET['page'])) {
         include('standard/index.php');
     } elseif (isset($_GET['page']) && $_GET['page'] == 'index') {
         include('standard/index.php');
-    }elseif (isset($_GET['page']) && $_GET['page'] == 'insert') {
+    } elseif (isset($_GET['page']) && $_GET['page'] == 'insert') {
         include('standard/insert.php');
-    }elseif (isset($_GET['page']) && $_GET['page'] == 'status') {
+    } elseif (isset($_GET['page']) && $_GET['page'] == 'status') {
         include('standard/status.php');
-    }elseif (isset($_GET['page']) && $_GET['page'] == 'report') {
+    } elseif (isset($_GET['page']) && $_GET['page'] == 'report') {
         include('standard/report.php');
-    }elseif (isset($_GET['page']) && $_GET['page'] == 'dash') {
+    } elseif (isset($_GET['page']) && $_GET['page'] == 'statusedit') {
+        include('standard/status_edit.php');
+    } elseif (isset($_GET['page']) && $_GET['page'] == 'dash') {
         include('dashboard/index.php');
+    } elseif (isset($_GET['page']) && $_GET['page'] == 'add') {
+        include('standard/add.php');
     }
     ?>
 
 
-<?php include('./include/footer.php');?>
+    <?php include('./include/footer.php'); ?>
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top btn-hover">
         <i class="lni lni-chevron-up"></i>
     </a>
 
-   <?php include('./include/script.php');?>
+    <?php include('./include/script.php'); ?>
 </body>
 
 </html>

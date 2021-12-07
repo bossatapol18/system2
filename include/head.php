@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="../system1/assets/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../system1/assets/assets/css/LineIcons.2.0.css" />

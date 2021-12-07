@@ -14,4 +14,3 @@ if(sqlsrv_query( $conn, $sql11, $params11)){
 }
 sqlsrv_close($conn);
 }
-?>
