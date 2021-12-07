@@ -6,7 +6,7 @@
                     <div class="section-title">
                         <h2 class="wow fadeInUp" data-wow-delay=".4s">เพิ่มเอกสารที่ยื่นขอ มอก.</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s"></p>
-                      
+                        <form method="post">              
 <script>
 function add_row() {
     var table = document.getElementById("myTable");
@@ -48,13 +48,7 @@ function del_row(){
     count_rows = table.getElementsByTagName("tr").length;
     document.getElementById("myTable").deleteRow(count_rows-1);
 }
-</script>
-
-
-
-
-            
-                   
+</script>   
                     </div>
                 </div>
             </div>
@@ -62,7 +56,6 @@ function del_row(){
 
         <div class="  tab-content font">
         <div id="home" class="container-fluid tab-pane active m-2">
-        <form method="post">
             <table class="table table-responsive text-center pt-5"  id="myTable">
                 <thead>
                     <tr>

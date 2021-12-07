@@ -11,25 +11,10 @@ $query = sqlsrv_query($conn,$sql);
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="choose-content">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <!-- Start Single List -->
-                                <div class="single-list wow fadeInUp" data-wow-delay=".2s">
-                                    <i class="lni lni-book"></i>
-                                    <?php while ($result = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) : ?>
-                                    <h4>จำนวนเอกสารทั้งหมด</h4>
-                                    <p><?=$result['count_standard']?></p>
-                                    <?php endwhile;?>
-                                </div>
-                                <!-- Start Single List -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
+<!-- ใส่โค้ดตรงนี้นะ -->
+
+
         </div>
     </section>
     <!-- /End Why Choose Area -->
