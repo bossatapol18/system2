@@ -9,7 +9,7 @@ if (isset($_GET['group_id']) && !empty($_GET['group_id'])) {
 if (isset($_POST) && !empty($_POST)) {
     $group_name = $_POST['group_name'];
     $sql = "UPDATE group_tb SET group_name= ?  WHERE group_id = ? ";
-    $params = array($_POST["group_name"], $_POST["group_id"]);
+    $params = array($group_name, $group_id);
 
     if (sqlsrv_query($conn, $sql, $params)) {
         $alert = '<script type="text/javascript">';

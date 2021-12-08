@@ -9,7 +9,7 @@ if (isset($_GET['agency_id']) && !empty($_GET['agency_id'])) {
 if (isset($_POST) && !empty($_POST)) {
     $group_name = $_POST['agency_name'];
     $sql = "UPDATE agency_tb SET agency_name= ?  WHERE agency_id = ? ";
-    $params = array($_POST["agency_name"], $_POST["agency_id"]);
+    $params = array($agency_name, $agency_id);
 
     if (sqlsrv_query($conn, $sql, $params)) {
         $alert = '<script type="text/javascript">';
