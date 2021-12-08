@@ -54,127 +54,16 @@
           </div>
       </div>
 
-      <!-- <div class="  tab-content font">
-        <div id="home" class="container-fluid tab-pane active m-2">
-            <table class="table table-responsive text-center pt-5"  id="myTable">
-                <thead>
-                    <tr>
-                        <th>ลำดับที่</th>
-                        <th>วาระจากในที่ประชุมสมอ.</th>
-                        <th>เลขที่มอก.</th>
-                        <th>ประเภทผลิตภัณฑ์</th>
-                        <th>กลุ่มผลิตภัณฑ์</th>
-                        <th>ชื่อมาตรฐาน</th>
-                        <th>หน่วยงานที่ทดสอบได้</th>
-                        <th>มาตรฐานบังคับ</th>
-                        <th>หน่วยงานที่ขอ</th>
-                        <th>หมายเลข tacking</th>
-                        <th>หมายเหตุ</th>
-                        <th>แนบไฟล์</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php $i = 1; ?>
-                    <tr class="text-center">
-                        <td class="align-middle"><?= $i++; ?></td>
-                        <td class="align-middle"><input type="text" class="form-control" name="standard_meet" required></td>
-                        <td class="align-middle"><input type="text" class="form-control" name="standard_number" required></td>
-                        <td class="align-middle">
-                            <select class="form-control" autocomplete="off" name="type_id" style="height: unset !important;">
-                                <option value="" selected disabled>ประเภทผลิตภัณฑ์</option>
-                                <?php while ($result = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) { ?>
-                                    <option value="<?= $result['type_id'] ?>"><?= $result['type_name'] ?></option>
-                                <?php } ?>
-                            </select>
-                        </td>
-                        <td class="align-middle"><select class="form-control" name="group_id" style="height: unset !important;">
-                                <option value="" selected autocomplete="off" disabled>กลุ่มผลิตภัณฑ์</option>
-                                <?php while ($result = sqlsrv_fetch_array($query1, SQLSRV_FETCH_ASSOC)) { ?>
-                                    <option value="<?= $result['group_id'] ?>"><?= $result['group_name'] ?></option>
-                                <?php } ?>
-                            </select></td>
-                        <td class="align-middle"><textarea type="text" class="form-control" name="standard_detail" required></textarea></td>
-                        <td class="align-middle">
-                            <select class="form-control" name="agency_id" autocomplete="off" style="height: unset !important;">
-                                <option value="" selected disabled>หน่วยงานที่สามารถทดสอบได้</option>
-                                <?php while ($result = sqlsrv_fetch_array($query2, SQLSRV_FETCH_ASSOC)) { ?>
-                                    <option value="<?= $result['agency_id'] ?>"><?= $result['agency_name'] ?></option>
-                                <?php } ?>
-                            </select>
-                        </td>
-                         <td class="align-middle"><input type="text" class="form-control" name="agency_name" required></td> 
-                        <td class="align-middle"><input type="text" class="form-control" name="standard_mandatory" required></td>
-                        <td class="align-middle">
-                            <select class="form-control" autocomplete="off" name="department_id" style="height: unset !important;">
-                                <option value="" selected disabled>หน่วยงานที่ขอ</option>
-                                <?php while ($result = sqlsrv_fetch_array($query3, SQLSRV_FETCH_ASSOC)) { ?>
-                                    <option value="<?= $result['department_id'] ?>"><?= $result['department_name'] ?></option>
-                                <?php } ?>
-                            </select>
-                        </td>
-                        <td class="align-middle"><input type="text" class="form-control" name="standard_tacking" required></td>
-                        <td class="align-middle"><input type="text" class="form-control" name="standard_note" required></td>
-                        <td class="align-middle"><input type="file" class="form-control" name="standard_file"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <button type="button" onclick="add_row()" class="btn btn-danger bt mg-t-bt" >เพิ่มฟอร์ม</button>
-            <button type="button" onclick="del_row()" class="btn btn-danger bt mg-t-bt">ลบฟอร์ม</button>
-            <button type="submit" class="btn btn-primary bt mg-t-bt">เพิ่มข้อมูล</button>
-        </form>
-    </div>
-</div> -->
-
       <div class="container card-regis">
           <div class="container  font">
               <form method="post" action="">
-
-
-
-                  <!-- <div class="input1 grid">
-                <div>
-                    <label> ชื่อหน่วยงาน </label>
-                    <input type="text" name="name_com" class="form-control" autocomplete="off">
-                </div>
-                <div>
-                    <label> ตำแหน่ง </label>
-                    <input type="text" name="position" class="form-control" autocomplete="off">
-                </div>
-                <div>
-                    <label> ระบุประเภทกิจการ </label>
-                    <select name="type_com" class="form-control">
-                        <option value="" selected disabled>-กรุณาเลือก-</option>
-                        <option value="กิจการคนเดียว">กิจการคนเดียว</option>
-                        <option value="กิจการห้างหุ้นส่วน">กิจการห้างหุ้นส่วน</option>
-                        <option value="บริษัทจำกัด">บริษัทจำกัด</option>
-                        <option value="บริษัทมหาชนจำกัด">บริษัทมหาชนจำกัด</option>
-                    </select>
-                </div>
-            </div> -->
-                  <br>
-
-                  <br>
-                  <div class=" ">
-                      <!-- <div class="">
-                    <label for="sel1">คำนำหน้าชื่อ:</label>
-                    <select class="form-control">
-                        <option value="" selected disabled>-กรุณาเลือก-</option>
-                        <option value="นาย">นาย</option>
-                        <option value="นาย">นางสาว</option>
-                        <option value="นาย">นาง</option>
-                    </select>
-                </div> -->
-
-                      <!--เก็บข้อมุล
-                  standard_id รันปกติ -->
-
                       <div class="mb-3">
                           <label> วาระจากที่ประชุม สมอ. </label>
-                          <input type="text" name="" class="form-control" autocomplete="off">
+                          <input type="text" name="standard_meet" class="form-control" autocomplete="off">
                       </div>
                       <div class="f-red mb-3">
                           <label> เลขที่ มอก.* </label>
-                          <input type="text" name="" class="form-control" autocomplete="off" required>
+                          <input type="text" name="standard_number" class="form-control" autocomplete="off" required>
                       </div>
 
                       <div class="f-red mb-3">
@@ -204,7 +93,7 @@
                       </div>
                       <div class="mb-3">
                           <label> ชื่อมาตรฐาน </label>
-                          <input type="text" name="" class="form-control" autocomplete="off">
+                          <input type="text" name="standard_detail" class="form-control" autocomplete="off">
                       </div>
                       <div class="mb-3">
                           <div class="input-group">
@@ -217,7 +106,7 @@
                       </div>
                       <div class="mb-3">
                           <label> มาตรฐานบังคับ </label>
-                          <input type="text" name="" class="form-control" autocomplete="off">
+                          <input type="text" name="standard_mandatory" class="form-control" autocomplete="off">
                       </div>
                       <div class="mb-3">
                           <div class="input-group">
@@ -229,26 +118,15 @@
 
                           <input type="text" name="department_name[]" class="form-control department_name" id="department_name">
                       </div>
-                      <!-- <div class="">
-                    <label> เอกสารแนบ </label>
-                    <input type="text" name="h_num" class="form-control" autocomplete="off">
-                </div> -->
-
-
                       <div class="mb-3">
                           <label> หมายเหตุเลข tracking </label>
-                          <input type="text" name="" class="form-control" autocomplete="off">
+                          <input type="text" name="standard_tacking" class="form-control" autocomplete="off">
                       </div>
 
                       <div class="mb-3">
                           <label> หมายเหตุ </label>
-                          <input type="text" name="" class="form-control" autocomplete="off">
-                      </div>
-
-                      <!-- <div class="mb-3">
-                          <input type="file" id="myFile" name="filename">
-                          <input type="submit">
-                      </div> -->
+                          <input type="text" name="standard_note" class="form-control" autocomplete="off">
+                            </div>
                       <div class="mb-3">
                           <div class="input-group">
                               <label class="input-group-text"> ไฟล์แนบ </label>
