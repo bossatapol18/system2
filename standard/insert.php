@@ -57,90 +57,90 @@
       <div class="container card-regis">
           <div class="container  font">
               <form method="post" action="">
-                      <div class="mb-3">
-                          <label> วาระจากที่ประชุม สมอ. </label>
-                          <input type="text" name="standard_meet" class="form-control" autocomplete="off">
-                      </div>
-                      <div class="f-red mb-3">
-                          <label> เลขที่ มอก.* </label>
-                          <input type="text" name="standard_number" class="form-control" autocomplete="off" required>
-                      </div>
+                  <div class="mb-3">
+                      <label> วาระจากที่ประชุม สมอ. </label>
+                      <input type="text" name="standard_meet" class="form-control" autocomplete="off">
+                  </div>
+                  <div class="f-red mb-3">
+                      <label> เลขที่ มอก.* </label>
+                      <input type="text" name="standard_number" class="form-control" autocomplete="off" required>
+                  </div>
 
-                      <div class="f-red mb-3">
-                          <label> ประเภทผลิตภัณฑ์* </label> <!-- ชื่อประเภทผลิตภัณฑ์ตรงนี้น่าจะต้องดึงมาจาก db ว่ามีไรบ้าง -->
-                          <div class="grid">
-                              <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 1</label></div>
-                              <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 2</label></div>
-                              <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 3</label></div>
-                              <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 4</label></div>
-                              <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 5</label></div>
-                              <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 6</label></div>
-                              <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 7</label></div>
-                              <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 8</label></div>
-                          </div>
-
-                      </div>
-
-
-                      <div class="mb-3">
-                          <div class="input-group">
-                              <label class="input-group-text"> กลุ่มผลิตภัณฑ์ </label>
-
-                              <a id="btndelete3" class="input_add btn btn-outline-success  ">+</a>
-                              <a id="btnadd3" class="input_del btn btn-outline-danger  ">-</a>
-                          </div>
-                          <input type="text" name="group_name[]" class="form-control group_name" id="group_name">
-                      </div>
-                      <div class="mb-3">
-                          <label> ชื่อมาตรฐาน </label>
-                          <input type="text" name="standard_detail" class="form-control" autocomplete="off">
-                      </div>
-                      <div class="mb-3">
-                          <div class="input-group">
-                              <label class="input-group-text"> หน่วยงานที่ทดสอบได้ </label>
-
-                              <a id="btndelete2" class="input_add btn btn-outline-success  ">+</a>
-                              <a id="btnadd2" class="input_del btn btn-outline-danger  ">-</a>
-                          </div>
-                          <input type="text" name="agency_name[]" class="form-control agency_name" id="agency_name">
-                      </div>
-                      <div class="mb-3">
-                          <label> มาตรฐานบังคับ </label>
-                          <input type="text" name="standard_mandatory" class="form-control" autocomplete="off">
-                      </div>
-                      <div class="mb-3">
-                          <div class="input-group">
-                              <label class="input-group-text"> หน่วยงานที่ขอ </label>
-
-                              <a id="btndelete1" class="input_add btn btn-outline-success  ">+</a>
-                              <a id="btnadd1" class="input_del btn btn-outline-danger  ">-</a>
-                          </div>
-
-                          <input type="text" name="department_name[]" class="form-control department_name" id="department_name">
-                      </div>
-                      <div class="mb-3">
-                          <label> หมายเหตุเลข tracking </label>
-                          <input type="text" name="standard_tacking" class="form-control" autocomplete="off">
-                      </div>
-
-                      <div class="mb-3">
-                          <label> หมายเหตุ </label>
-                          <input type="text" name="standard_note" class="form-control" autocomplete="off">
-                            </div>
-                      <div class="mb-3">
-                          <div class="input-group">
-                              <label class="input-group-text"> ไฟล์แนบ </label>
-                             
-                              <a id="btndelete4" class="input_add btn btn-outline-success  ">+</a>
-                              <a id="btnadd4" class="input_del btn btn-outline-danger  ">-</a>
-                          </div>
-                          <input type="file" id="filename" name="filename" class="form-control filename">
-                          
+                  <div class="f-red mb-3">
+                      <label> ประเภทผลิตภัณฑ์* </label> <!-- ชื่อประเภทผลิตภัณฑ์ตรงนี้น่าจะต้องดึงมาจาก db ว่ามีไรบ้าง -->
+                      <div class="grid">
+                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 1</label></div>
+                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 2</label></div>
+                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 3</label></div>
+                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 4</label></div>
+                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 5</label></div>
+                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 6</label></div>
+                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 7</label></div>
+                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 8</label></div>
                       </div>
 
                   </div>
-                  <hr>
-                  <!-- <div class="mb-3">
+
+
+                  <div class="mb-3">
+                      <div class="input-group">
+                          <label class="input-group-text"> กลุ่มผลิตภัณฑ์ </label>
+
+                          <a id="btndelete3" class="input_add btn btn-outline-success  ">+</a>
+                          <a id="btnadd3" class="input_del btn btn-outline-danger  ">-</a>
+                      </div>
+                      <input type="text" name="group_name[]" class="form-control group_name" id="group_name">
+                  </div>
+                  <div class="mb-3">
+                      <label> ชื่อมาตรฐาน </label>
+                      <input type="text" name="standard_detail" class="form-control" autocomplete="off">
+                  </div>
+                  <div class="mb-3">
+                      <div class="input-group">
+                          <label class="input-group-text"> หน่วยงานที่ทดสอบได้ </label>
+
+                          <a id="btndelete2" class="input_add btn btn-outline-success  ">+</a>
+                          <a id="btnadd2" class="input_del btn btn-outline-danger  ">-</a>
+                      </div>
+                      <input type="text" name="agency_name[]" class="form-control agency_name" id="agency_name">
+                  </div>
+                  <div class="mb-3">
+                      <label> มาตรฐานบังคับ </label>
+                      <input type="text" name="standard_mandatory" class="form-control" autocomplete="off">
+                  </div>
+                  <div class="mb-3">
+                      <div class="input-group">
+                          <label class="input-group-text"> หน่วยงานที่ขอ </label>
+
+                          <a id="btndelete1" class="input_add btn btn-outline-success  ">+</a>
+                          <a id="btnadd1" class="input_del btn btn-outline-danger  ">-</a>
+                      </div>
+
+                      <input type="text" name="department_name[]" class="form-control department_name" id="department_name">
+                  </div>
+                  <div class="mb-3">
+                      <label> หมายเหตุเลข tracking </label>
+                      <input type="text" name="standard_tacking" class="form-control" autocomplete="off">
+                  </div>
+
+                  <div class="mb-3">
+                      <label> หมายเหตุ </label>
+                      <input type="text" name="standard_note" class="form-control" autocomplete="off">
+                  </div>
+                  <div class="mb-3">
+                      <div class="input-group">
+                          <label class="input-group-text"> ไฟล์แนบ </label>
+
+                          <a id="btndelete4" class="input_add btn btn-outline-success  ">+</a>
+                          <a id="btnadd4" class="input_del btn btn-outline-danger  ">-</a>
+                      </div>
+                      <input type="file" id="filename" name="filename" class="form-control filename">
+
+                  </div>
+
+          </div>
+          <hr>
+          <!-- <div class="mb-3">
                         <div class="input-group ">
                             <label class="input-group-text">1. วัตถุประสงค์ </label>
                             <a id="btndeleteob" class="input_add btn btn-outline-info  ">+</a>
@@ -150,16 +150,16 @@
                     </div> -->
 
 
-                  <center>
-                      <div class="bt">
-                          <!-- <input type="checkbox" name="chkColor1" value="Red">กรุณายอมรับและเงื่อนไขสำหรับการสมัครสมาชิก -->
+          <center>
+              <div class="bt">
+                  <!-- <input type="checkbox" name="chkColor1" value="Red">กรุณายอมรับและเงื่อนไขสำหรับการสมัครสมาชิก -->
 
-                          <!-- <button type="submit" class="btn btn-danger">รับรหัส otp</button> -->
-                          <button type="submit" class="btn btn-primary bt mg-t-bt">เพิ่มข้อมูล</button>
-                      </div>
-                  </center>
-              </form>
-          </div>
+                  <!-- <button type="submit" class="btn btn-danger">รับรหัส otp</button> -->
+                  <button type="submit" class="btn btn-primary bt mg-t-bt">เพิ่มข้อมูล</button>
+              </div>
+          </center>
+          </form>
+      </div>
       </div>
       <!-- <a href=""><img src="https://www2.tistr.or.th/tistrservices/training/images/logo2.png" class="logo"></a> -->
 

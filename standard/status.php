@@ -42,9 +42,9 @@
                                 <td class="align-middle"><?= $data['standard_meet'] ?></td>
                                 <td class="align-middle"><?= $data['standard_number'] ?></td>
                                 <td class="align-middle"><?= $data['standard_detail'] ?></td>
-                                <td class="align-middle"><?= $data['agency_id'] ?></td>
+                                <td class="align-middle"><?= $data['agency_name'] ?></td> <!--ลองเปลี่ยน agency_id รันออก -->
                                 <td class="align-middle"><?= $data['standard_mandatory'] ?></td>
-                                <td class="align-middle"><?= $data['department_id'] ?></td>
+                                <td class="align-middle"><?= $data['department_name'] ?></td> <!--ลองเปลี่ยน department_id รันออก -->
                                 <td class="align-middle">
                                     <!-- <input type="date" class="form-control" name="progess_date" required> -->
                                     -
@@ -59,8 +59,8 @@
                                 <td class="align-middle">
                                     <div class="mb-4">
                                         <!--กดรายงานสถานะแล้วไปหน้าไหนต่อ แล้วในหน้านั้นเป็นประมาณไหน จะได้สร้างถูก -->
-                                        <!-- <a href="?page=statusedit<?= $_GET['page'] ?>&function=update&standard_id=<?= $standard_id ?>" class="btn btn-sm btn-warning">แก้ไขสถานะ</a> -->
-                                        <a href="?page=" class="btn btn-sm btn-warning">แก้ไขสถานะ</a> 
+                                        
+                                        <a href="?page=statusedit&standard_id=<?php echo $data["standard_id"]; ?>" class="btn btn-sm btn-warning" role="button">แก้ไขสถานะ</a> 
                                 </td>
                             </tr>
                         <?php } ?>

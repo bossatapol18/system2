@@ -11,8 +11,8 @@ if (isset($_POST) && !empty($_POST)) {
     $agency_id = $_POST['agency_id'];
     $department_id = $_POST['department_id'];
 }
-    $sql = "SELECT * FROM standard_tb ";
-    $query = sqlsrv_query($conn,$sql);
+$sql = "SELECT * FROM standard_tb ";
+$query = sqlsrv_query($conn, $sql);
 ?>
 
 
@@ -20,7 +20,7 @@ if (isset($_POST) && !empty($_POST)) {
 
 
 <!-- อันนี้อันเก่า ลองไม่ใส่แล้ว หน้าเอกสารทั้งหมดดึงข้อมูลไม่ออก -->
-    <?php
+<?php
 if (isset($_POST) && !empty($_POST)) {
     $standard_name = $_POST['standard_name'];
     $standard_number = $_POST['standard_number'];
@@ -33,6 +33,6 @@ if (isset($_POST) && !empty($_POST)) {
     $agency_id = $_POST['agency_id'];
     $department_id = $_POST['department_id'];
 }
-    $sql = "SELECT * FROM standard_tb";
-    $query = sqlsrv_query($conn,$sql);
+$sql = "SELECT * FROM standard_tb";
+$query = sqlsrv_query($conn, $sql);
 ?>
