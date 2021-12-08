@@ -42,9 +42,9 @@
                                 <td class="align-middle"><?= $data['standard_meet'] ?></td>
                                 <td class="align-middle"><?= $data['standard_number'] ?></td>
                                 <td class="align-middle"><?= $data['standard_detail'] ?></td>
-                                <td class="align-middle"><?= $data['name_agency'] ?></td>
+                                <td class="align-middle"><?= $data['agency_id'] ?></td>
                                 <td class="align-middle"><?= $data['standard_mandatory'] ?></td>
-                                <td class="align-middle"><?= $data['department_name'] ?></td>
+                                <td class="align-middle"><?= $data['department_id'] ?></td>
                                 <td class="align-middle">
                                     <!-- <input type="date" class="form-control" name="progess_date" required> -->
                                     -

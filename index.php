@@ -135,11 +135,32 @@
     } elseif (isset($_GET['page']) && $_GET['page'] == 'add') {
         include('standard/add.php');
     } elseif (isset($_GET['page']) && $_GET['page'] == 'add_type') {
-        include('standard/add_type.php');
+        if (isset($_GET['function']) && $_GET['function'] == 'update') {
+            include('standard/add_update_type.php');
+        }if (isset($_GET['function']) && $_GET['function'] == 'delete') {
+            include('standard/add_delete_type.php');
+        }
+        else{
+            include('standard/add_type.php');
+        }
     } elseif (isset($_GET['page']) && $_GET['page'] == 'add_group') {
-        include('standard/add_group.php');
+        if (isset($_GET['function']) && $_GET['function'] == 'update') {
+            include('standard/add_update_group.php');
+        }if (isset($_GET['function']) && $_GET['function'] == 'delete') {
+            include('standard/add_delete_group.php');
+        }
+        else{
+            include('standard/add_group.php');
+        }
     } elseif (isset($_GET['page']) && $_GET['page'] == 'add_agency') {
+        if (isset($_GET['function']) && $_GET['function'] == 'update') {
+            include('standard/add_update_agency.php');
+        }if (isset($_GET['function']) && $_GET['function'] == 'delete') {
+            include('standard/add_delete_agency.php');
+        }
+        else{
         include('standard/add_agency.php');
+        }
     }elseif (isset($_GET['page']) && $_GET['page'] == 'add_insert_type') {
         include('standard/add_insert_type.php');
     }elseif (isset($_GET['page']) && $_GET['page'] == 'add_insert_group') {
