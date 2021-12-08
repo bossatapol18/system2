@@ -97,6 +97,16 @@
   
   }
 
+  .grid-3{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  justify-items: center;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 5px;
+  
+  }
+
   .grid-4{
     display: grid;
   grid-template-columns: 1fr 1fr 1fr  1fr;
@@ -170,11 +180,11 @@
 }
 
 .mg-l-menu{
-  margin-left:240px;
+  margin-left:100px;
 }
 
 .mg-l-menu2{
-  margin-left:200px;
+  margin-left:240px;
 }
 
 .s-ct{
@@ -233,5 +243,22 @@
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
+}
+.sticky {
+  
+  position: sticky;
+  top: 0;
+  background-color: ;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.ic {
+  width:70px;
+    height:70px;
+}
+
+.b-add{
+  margin-left:92%;
 }
   </style>

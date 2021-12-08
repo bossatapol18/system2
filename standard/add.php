@@ -1,5 +1,5 @@
 <section class="items-grid section custom-padding">
-    <div class="">
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
@@ -11,81 +11,38 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container card-regis font">
-        <form method="post" action="">
-            <h3 class="font">เพิ่มข้อมูลประเภทผลิตภัณฑ์</h3>
-            <hr>
-
-            <br>
-            <div class="">
-                <div>
-                    <label> ชื่อประเภทผลิตภัณฑ์ </label>
-                    <input type="text" name="name_com" class="form-control" autocomplete="off">
-                </div>
-
+        <center>
+        <div class="grid-3 wow fadeInUp" data-wow-delay=".4s">
+            <div>
+                <a href="?page=add_type" class="single-cat">
+                    <div class="icon">
+                        <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-add-icon.png" alt="#" class="ic">
+                    </div>
+                    <h4>ข้อมูลประเภทผลิตภัณฑ์</h4>
+                </a>
             </div>
-            <hr>
-            <center>
-                <div class="bt">
-                    <!-- <input type="checkbox" name="chkColor1" value="Red">กรุณายอมรับและเงื่อนไขสำหรับการสมัครสมาชิก -->
-
-                    <!-- <button type="submit" class="btn btn-danger">รับรหัส otp</button> -->
-                    <button type="submit" class="btn btn-info bt">เพิ่มข้อมูล</button>
-                </div>
-            </center>
-        </form>
-    </div>
-
-    <div class="container card-regis font">
-        <form method="post" action="">
-            <h3 class="font">เพิ่มข้อมูลกลุ่มผลิตภัณฑ์</h3>
-            <hr>
-
-            <br>
-            <div class="">
-                <div>
-                    <label> ชื่อกลุ่มผลิตภัณฑ์ </label>
-                    <input type="text" name="name_com" class="form-control" autocomplete="off">
-                </div>
-
+            <div>
+                <a href="?page=add_group" class="single-cat">
+                    <div class="">
+                        <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-add-icon.png" alt="#" class="ic">
+                    </div>
+                    <h4>ข้อมูลกลุ่มผลิตภัณฑ์</h4>
+                </a>
             </div>
-            <hr>
-            <center>
-                <div class="bt">
-                    <!-- <input type="checkbox" name="chkColor1" value="Red">กรุณายอมรับและเงื่อนไขสำหรับการสมัครสมาชิก -->
-
-                    <!-- <button type="submit" class="btn btn-danger">รับรหัส otp</button> -->
-                    <button type="submit" class="btn btn-info bt">เพิ่มข้อมูล</button>
-                </div>
-            </center>
-        </form>
-    </div>
-
-    <div class="container card-regis font">
-        <form method="post" action="">
-            <h3 class="font">เพิ่มข้อมูลหน่วยงานที่ทดสอบได้</h3>
-            <hr>
-
-            <br>
-            <div class="">
-                <div>
-                    <label> ชื่อหน่วยงานที่ทดสอบได้ </label>
-                    <input type="text" name="name_com" class="form-control" autocomplete="off">
-                </div>
-
+            <div>
+                <a href="?page=add_agency" class="single-cat">
+                    <div class="icon">
+                        <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-add-icon.png" alt="#" class="ic">
+                    </div>
+                    <h4>ข้อมูลหน่วยงานที่ทดสอบได้</h4>
+                </a>
             </div>
-            <hr>
-            <center>
-                <div class="bt">
-                    <!-- <input type="checkbox" name="chkColor1" value="Red">กรุณายอมรับและเงื่อนไขสำหรับการสมัครสมาชิก -->
-
-                    <!-- <button type="submit" class="btn btn-danger">รับรหัส otp</button> -->
-                    <button type="submit" class="btn btn-info bt">เพิ่มข้อมูล</button>
-                </div>
-            </center>
-        </form>
+        </div>
+        </center>
     </div>
+
+
+
+
 
 </section>

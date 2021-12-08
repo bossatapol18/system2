@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">แก้ไขสถานะเอกสาร</h2>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">เอกสารทั้งหมด</h2>
                     <p class="wow fadeInUp" data-wow-delay=".6s"></p>
 
 
@@ -30,6 +30,7 @@
                             <th>วันที่แต่งตั้ง</th>
                             <th>สถานะ</th>
                             <th>เลขเอกสารที่เกี่ยวข้อง</th>
+                            <th>เมนูจัดการ</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,20 +42,25 @@
                                 <td class="align-middle"><?= $data['standard_meet'] ?></td>
                                 <td class="align-middle"><?= $data['standard_number'] ?></td>
                                 <td class="align-middle"><?= $data['standard_detail'] ?></td>
-                                <td class="align-middle"><?= $data['agency_id'] ?></td>
+                                <td class="align-middle"><?= $data['name_agency'] ?></td>
                                 <td class="align-middle"><?= $data['standard_mandatory'] ?></td>
-                                <td class="align-middle"><?= $data['department_id'] ?></td>
+                                <td class="align-middle"><?= $data['department_name'] ?></td>
                                 <td class="align-middle">
-                                    <input type="date" class="form-control" name="progess_date" required>
+                                    <!-- <input type="date" class="form-control" name="progess_date" required> -->
+                                    -
+                                </td>
+                                <td class="align-middle">
+                                   -
+                                </td>
+                                <td class="align-middle">
+                                    <!-- <input type="text" class="form-control" name="name_real" required> -->
+                                    -
                                 </td>
                                 <td class="align-middle">
                                     <div class="mb-4">
                                         <!--กดรายงานสถานะแล้วไปหน้าไหนต่อ แล้วในหน้านั้นเป็นประมาณไหน จะได้สร้างถูก -->
-                                        <a href="?page=statusedit<?= $_GET['page'] ?>&function=update&standard_id=<?= $standard_id ?>" class="btn btn-sm btn-warning">รายงานสถานะ</a>
-                                        <!-- <a href="status_edit.php" class="btn btn-sm btn-warning">รายงานสถานะ</a>  -->
-                                </td>
-                                <td class="align-middle">
-                                    <input type="text" class="form-control" name="name_real" required>
+                                        <!-- <a href="?page=statusedit<?= $_GET['page'] ?>&function=update&standard_id=<?= $standard_id ?>" class="btn btn-sm btn-warning">แก้ไขสถานะ</a> -->
+                                        <a href="?page=" class="btn btn-sm btn-warning">แก้ไขสถานะ</a> 
                                 </td>
                             </tr>
                         <?php } ?>
