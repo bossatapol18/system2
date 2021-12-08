@@ -67,21 +67,15 @@
                   </div>
 
                   <div class="f-red mb-3">
-                      <label> ประเภทผลิตภัณฑ์* </label> <!-- ชื่อประเภทผลิตภัณฑ์ตรงนี้น่าจะต้องดึงมาจาก db ว่ามีไรบ้าง -->
+                      <label> ประเภทผลิตภัณฑ์* </label> 
                       <div class="grid">
-                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 1</label></div>
-                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 2</label></div>
-                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 3</label></div>
-                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 4</label></div>
-                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 5</label></div>
-                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 6</label></div>
-                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 7</label></div>
-                          <div><input type="checkbox" id="vehicle2" name="vehicle2" value=""> <label for="vehicle2">ประเภทผลิตภัณฑ์ 8</label></div>
-                      </div>
-
+                      <?php while ($result = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) { ?>
+                          <div><input type="checkbox" id="vehicle2" name="vehicle2 type_id" value="<?=$result['type_id']?>"> <label for="vehicle2"><?=$result['type_name']?></label></div>
+                       <?php } ?>
+                    </div>
                   </div>
 
-
+    
                   <div class="mb-3">
                       <div class="input-group">
                           <label class="input-group-text"> กลุ่มผลิตภัณฑ์ </label>
@@ -155,7 +149,7 @@
                   <!-- <input type="checkbox" name="chkColor1" value="Red">กรุณายอมรับและเงื่อนไขสำหรับการสมัครสมาชิก -->
 
                   <!-- <button type="submit" class="btn btn-danger">รับรหัส otp</button> -->
-                  <button type="submit" class="btn btn-primary bt mg-t-bt">เพิ่มข้อมูล</button>
+                  <button type="submit" name="save_multiple_checkbox" class="btn btn-primary bt mg-t-bt">เพิ่มข้อมูล</button>
               </div>
           </center>
           </form>
