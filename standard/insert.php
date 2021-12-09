@@ -75,7 +75,6 @@
                     </div>
                   </div>
 
-    
                   <div class="mb-3">
                       <div class="input-group">
                           <label class="input-group-text"> กลุ่มผลิตภัณฑ์ </label>
@@ -83,7 +82,7 @@
                           <a id="btndelete3" class="input_add btn btn-outline-success  ">+</a>
                           <a id="btnadd3" class="input_del btn btn-outline-danger  ">-</a>
                       </div>
-                      <input type="text" name="group_name[]" class="form-control group_name" id="group_name">
+                      <input type="text" name="group_name[] " class="form-control group_name" id="group_name">
                   </div>
                   <div class="mb-3">
                       <label> ชื่อมาตรฐาน </label>
@@ -96,7 +95,7 @@
                           <a id="btndelete2" class="input_add btn btn-outline-success  ">+</a>
                           <a id="btnadd2" class="input_del btn btn-outline-danger  ">-</a>
                       </div>
-                      <input type="text" name="agency_name[]" class="form-control agency_name" id="agency_name">
+                      <input type="text" name="agency_name[] agency_name" class="form-control agency_name" id="agency_name">
                   </div>
                   <div class="mb-3">
                       <label> มาตรฐานบังคับ </label>

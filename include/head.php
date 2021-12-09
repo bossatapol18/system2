@@ -27,4 +27,15 @@
     <link rel="stylesheet" href="../system1/assets/assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="../system1/assets/assets/css/main.css" />
 
+    <!-- Script -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 
+ <!-- jQuery UI -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  
+ <!-- Bootstrap Css -->
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+ 
+
 </head>

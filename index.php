@@ -17,7 +17,6 @@
     <!-- /End Preloader -->
 
     <?php include('./include/menu.php'); ?>
-
     <!-- Start Hero Area -->
     <section class="hero-area overlay">
         <div class="container">
