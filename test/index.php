@@ -29,13 +29,13 @@
                 <div class="card mt-4">
                     <div class="card-header">
                         <h4>How to Insert Multiple Data into Database in PHP MySQL
-                            <a href="javascript:void(0)" class="add-more-form float-end btn btn-primary">ADD MORE</a>
+                    
                         </h4>
                     </div>
                     <div class="card-body">
 
                         <form action="code.php" method="POST">
-                        
+                                <a href="javascript:void(0)" class="add-more-form float-end btn btn-primary">ADD MORE</a>
                             <div class="main-form mt-3 border-bottom">
                                 <div class="row">
                                     <div class="col-md-4">

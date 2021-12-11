@@ -1,5 +1,6 @@
 <?php
-if(isset($_POST) && !empty($_POST))
+require('connection/connection.php');
+if(isset($_POST['save_multiple_data']))
 {
     $group_name = $_POST['group_name'];
     $agency_name = $_POST['agency_name'];
@@ -15,17 +16,11 @@ if(isset($_POST) && !empty($_POST))
         $group_name = $group_name;
         $agency_name=$agency_name;
         $department_name=$department_name;
-        $standard_meet=$standard_meet;
-        $standard_number=$standard_number;
-        $standard_detail=$standard_detail;
-        $standard_note=$standard_note;
-        $standard_tacking=$standard_tacking;
         
-        $query = "INSERT INTO standard_tb (group_name,agency_name,standard_meet,standard_tacking,standard_number,standard_detail,standard_note,department_name) VALUES (?,?,?,?,?,?,?,?)";
+        $sql = "INSERT INTO standard_tb (group_name,agency_name,standard_meet,standard_tacking,standard_number,standard_detail,standard_note,department_name) VALUES (?,?,?,?,?,?,?,?)";
         $params = array($group_name,$standard_meet,$standard_tacking,$standard_number,$standard_detail,$standard_note,$department_name,$agency_name);
-        $query_run = sqlsrv_query($conn, $query,$params);
     }
-    if (sqlsrv_query($conn, $sql0, $params)) {
+    if (sqlsrv_query($conn, $sql, $params)) {
         $alert = '<script type="text/javascript">';
         $alert .= 'alert("เพิ่มข้อมูลสำเร็จ !!");';
         $alert .= 'window.location.href = "?page=status";';
@@ -33,7 +28,7 @@ if(isset($_POST) && !empty($_POST))
         echo $alert;
         exit();
     } else {
-        echo "Error: " . $sql0 . "<br>" . sqlsrv_errors($conn);
+        echo "Error: " . $sql . "<br>" . sqlsrv_errors($conn);
     }
     sqlsrv_close($conn);
 }
