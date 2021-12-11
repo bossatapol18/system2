@@ -1,30 +1,33 @@
-
 <?php
-require('../connection/connection.php');
+session_start();
+$con = mysqli_connect("localhost","root","","phptutorials");
 
-if(isset($_POST['save_multiple_checkbox']))
+if(isset($_POST['save_multiple_data']))
 {
-    $brands = $_POST['brands'];
-    // echo $brands;
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
 
-    foreach($brands as $item)
+    foreach($name as $index => $names)
     {
-        $type_name = $_POST['type_name'];
-        // echo $item . "<br>";
-        $query = "INSERT INTO standard_tb (type_name) VALUES ('?')";
-        $params = array($item);
-        $query_run = sqlsrv_query($conn, $query , $params);
+        $s_name = $names;
+        $s_phone = $phone[$index];
+        // $s_otherfiled = $empid[$index];
+
+        $query = "INSERT INTO demo (name,phone) VALUES ('$s_name','$s_phone')";
+        $query_run = mysqli_query($con, $query);
     }
 
     if($query_run)
     {
-        $_SESSION['status'] = "Inserted Successfully";
-        header("Location: index.php");
+        $_SESSION['status'] = "Multiple Data Inserted Successfully";
+        header("Location: insert-multiple-data.php");
+        exit(0);
     }
     else
     {
         $_SESSION['status'] = "Data Not Inserted";
-        header("Location: index.php");
+        header("Location: insert-multiple-data.php");
+        exit(0);
     }
 }
 ?>
