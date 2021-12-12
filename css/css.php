@@ -129,7 +129,9 @@
   .card-regis{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    margin-top: 30px;
+    
+    margin-bottom: 40px;
+    padding: 15px 15px 15px 15px;
   }
 
   .bt{
@@ -260,5 +262,8 @@
 
 .b-add{
   margin-left:92%;
+}
+.mg-t-in{
+  margin-top:20px;
 }
   </style>
