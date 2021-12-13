@@ -10,6 +10,7 @@ if(isset($_POST['save_multiple_data']))
     $standard_detail = $_POST['standard_detail'];
     $standard_tacking = $_POST['standard_tacking'];
     $standard_note = $_POST['standard_note'];
+    $standard_mandatory = $_POST['standard_mandatory'];
 
     foreach($group_name as $index => $group_name)
     {
@@ -17,8 +18,8 @@ if(isset($_POST['save_multiple_data']))
         $agency_name=$agency_name;
         $department_name=$department_name;
         
-        $sql = "INSERT INTO standard_tb (group_name,agency_name,standard_meet,standard_tacking,standard_number,standard_detail,standard_note,department_name) VALUES (?,?,?,?,?,?,?,?)";
-        $params = array($group_name,$standard_meet,$standard_tacking,$standard_number,$standard_detail,$standard_note,$department_name,$agency_name);
+        $sql = "INSERT INTO standard_tb (standard_mandatory,group_name,agency_name,standard_meet,standard_tacking,standard_number,standard_detail,standard_note,department_name) VALUES (?,?,?,?,?,?,?,?,?)";
+        $params = array($standard_mandatory,$group_name,$standard_meet,$standard_tacking,$standard_number,$standard_detail,$standard_note,$department_name,$agency_name);
     }
     if (sqlsrv_query($conn, $sql, $params)) {
         $alert = '<script type="text/javascript">';
