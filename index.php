@@ -76,7 +76,7 @@
                                 <h3>เอกสารทั้งหมด</h3>
                             </a>
 
-                            <a href="?page=insert1" class="single-cat">
+                            <a href="?page=insert2" class="single-cat">
                                 <div class="icon">
                                     <img src="https://th.seaicons.com/wp-content/uploads/2015/11/document-add-icon.png" alt="#">
                                 </div>
@@ -121,8 +121,8 @@
     <?php
     if (!isset($_GET['page']) && empty($_GET['page'])) {
         include('standard/status.php');
-    } elseif (isset($_GET['page']) && $_GET['page'] == 'insert1') {
-        include('standard/insert1.php');
+    } elseif (isset($_GET['page']) && $_GET['page'] == 'insert2') {
+        include('standard/insert2.php');
     } elseif (isset($_GET['page']) && $_GET['page'] == 'status') {
         include('standard/status.php');
     } elseif (isset($_GET['page']) && $_GET['page'] == 'report') {

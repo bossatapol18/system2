@@ -148,7 +148,7 @@
                   <!-- <input type="checkbox" name="chkColor1" value="Red">กรุณายอมรับและเงื่อนไขสำหรับการสมัครสมาชิก -->
 
                   <!-- <button type="submit" class="btn btn-danger">รับรหัส otp</button> -->
-                  <button type="submit" name="save_multiple_checkbox" class="btn btn-primary bt mg-t-bt">เพิ่มข้อมูล</button>
+                  <button type="submit" name="" class="btn btn-primary bt mg-t-bt">เพิ่มข้อมูล</button>
               </div>
           </center>
           </form>

@@ -3,8 +3,6 @@ require('connection/connection.php');
 if(isset($_POST['save_multiple_data']))
 {
     $group_name = $_POST['group_name'];
-    $agency_name = $_POST['agency_name'];
-    $department_name = $_POST['department_name'];
     $standard_meet = $_POST['standard_meet'];
     $standard_number = $_POST['standard_number'];
     $standard_detail = $_POST['standard_detail'];
@@ -15,11 +13,15 @@ if(isset($_POST['save_multiple_data']))
     foreach($group_name as $index => $group_name)
     {
         $group_name = $group_name;
-        $agency_name=$agency_name;
-        $department_name=$department_name;
+        $standard_meet = $standard_meet;
+        $standard_number = $standard_number;
+        $standard_detail = $standard_detail;
+        $standard_tacking = $standard_tacking;
+        $standard_note = $standard_note;
+        $standard_mandatory = $standard_mandatory;
         
-        $sql = "INSERT INTO standard_tb (standard_mandatory,group_name,agency_name,standard_meet,standard_tacking,standard_number,standard_detail,standard_note,department_name) VALUES (?,?,?,?,?,?,?,?,?)";
-        $params = array($standard_mandatory,$group_name,$standard_meet,$standard_tacking,$standard_number,$standard_detail,$standard_note,$department_name,$agency_name);
+        $sql = "INSERT INTO standard_tb (standard_mandatory,group_name,standard_meet,standard_tacking,standard_number,standard_detail,standard_note) VALUES (?,?,?,?,?,?,?)";
+        $params = array($standard_mandatory,$group_name,$standard_meet,$standard_tacking,$standard_number,$standard_detail,$standard_note);
     }
     if (sqlsrv_query($conn, $sql, $params)) {
         $alert = '<script type="text/javascript">';
